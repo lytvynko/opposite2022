@@ -1697,7 +1697,7 @@ function get_the_archive_title() {
 
 	if ( is_category() ) {
 		$title  = single_cat_title( '', false );
-		$prefix = _x( 'Category:', 'category archive title prefix' );
+		
 	} elseif ( is_tag() ) {
 		$title  = single_tag_title( '', false );
 		$prefix = _x( 'Tag:', 'tag archive title prefix' );

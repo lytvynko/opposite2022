@@ -1,0 +1,140 @@
+
+.burger {
+    height: 3px;
+    width: 25px;
+    background-color: #fff;
+    position: relative;
+    margin: 0 20px;
+    &:before {
+        content: '';
+        height: 3px;
+        width: 25px;
+        background-color: #fff;
+        position: absolute;
+        left: 0;
+        top: 10px;
+    }
+    &:after {
+        content: '';
+        height: 3px;
+        width: 25px;
+        background-color: #fff;
+        position: absolute;
+        left: 0;
+        bottom: 10px;
+    }
+}
+.menu-menu1-container {
+    position: absolute;
+    top: 115px;
+    background-color: #000;
+    z-index: 20;
+    right: -8px;
+}
+#primary-menu {
+    padding: 30px;
+}
+@media (min-width: 768px) {
+    h1 {
+        font-size: 2.5em;
+    }
+    
+    .header-text {
+        width: 70%;
+        text-align: left;
+        & p {
+            width: 80%;
+            text-align: left;
+            margin: inherit;
+        }
+    }  
+    .container {
+        flex-direction: row;
+        padding-left: 40px;
+        padding-right: 40px;
+        &>article, >section {
+            width: 70%;
+            
+        }
+    }  
+    .sidebar {
+        width: 30%;
+        padding-left: 80px;
+        
+    }
+    .site-description {
+        padding-bottom: 120px;
+        
+    }
+    .header-bottom {
+        max-height: 80vh;
+    }
+}
+@media screen and (min-width: 1200px) {
+    .header-bottom {
+        background-image: url("img/header.jpg");
+    }    
+    
+	.menu-toggle {
+		display: none;
+	}
+    .flex-mobile {
+        display: block;
+        float: right;
+    }
+
+	.main-navigation ul {
+		display: flex;
+	}
+    .desk-search {
+        display: block;
+    }
+    .mobile-search {
+        display: none;
+    }
+    .menu-item {
+        border-right: 1px solid;
+    }
+    .menu-menu1-container {
+        position: inherit;
+        
+        background-color: auto;
+        padding: 0;
+        
+    }
+    #primary-menu {
+        padding: 0;
+    }
+    .main-navigation li {
+        line-height: inherit;
+        font-size: inherit;
+    } 
+    .mask {
+        display: none;
+    }
+    .header-text {
+        width: 39vw;
+    }    
+    .container {
+        padding-left: 80px;
+        padding-right: 80px;
+    }
+    .site-description {
+        padding-bottom: 315px;
+    }
+    .visible-xs {
+        display: none;
+    }
+    .visible-lg {
+        display: block;
+    }
+    .slick-slide img {
+        padding: 0 20px !important;
+    }
+}
+@media screen and (min-width: 1400px) {
+     
+    h1 {
+        font-size: 3em;
+    }
+}    

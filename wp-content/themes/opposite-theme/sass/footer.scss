@@ -1,0 +1,14 @@
+.site-info {
+    display: flex;
+    justify-content: center;
+}
+.site-footer {
+    flex: 0 0 auto;
+}
+.copyright {
+
+    & p {
+        margin: 0;
+        line-height: 60px;
+    }
+}
